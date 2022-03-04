@@ -1,0 +1,563 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    /* position: relative; */
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87 !important;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 0px !important;
+    margin: 8px;
+    position: relative;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f2632c !important;
+    transition: .4s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::before{
+    width: 100%;
+}
+.web{
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+
+    
+}
+.slider{
+height: 100%;
+}
+.slider h1{
+    font-size: 75px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 35%;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.angle_down{
+
+}
+.angle_down i{
+    animation: updown .4s infinite linear;
+    animation-direction: alternate;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    font-size: 25px;  
+}
+@keyframes updown{
+    0%{
+        bottom: 15%;
+    } 
+    100%{
+        bottom: 10%;
+    }
+}
+
+.Who_we_are{
+
+}
+.Who_we_are p{
+
+margin-top: 25px;
+
+color: #999999;
+
+font-size: 16px;
+
+font-weight: 400;
+
+font-family: 'Montserrat', sans-serif;
+}
+.Who_we_are img{
+
+width: 100%;
+}
+.span_title{
+
+    
+}
+.what_we_do{
+    background: #f7f8f8;
+    position: relative;
+    padding-top: 30px;
+    background-image: url(../images/bg12.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 58%;
+    bottom: 0px;
+}
+
+.span_title span{    
+    display: block;        
+    height: 3px;        
+    width: 50px;      
+    position: relative;
+}
+.span_title span::before{
+    content: "";
+    position: absolute;
+    background: #ef5527;
+    height: 3px;
+    width: 0%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s all ease-in-out;
+}
+.Who_we_are:hover .span_title span::before{
+    width: 100%;
+}
+.what_we_do:hover .span_title span:before{
+    width: 100%;
+}
+.span_title h1{
+    text-transform: uppercase;
+    color: #1f4f87;
+    font-weight: 700;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.do_img{
+    position: relative;
+}
+.do_img::before{
+    content: "";
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    
+    opacity:0px;
+    transition: .4s all ease-in-out;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,28377e+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(40,55,126,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(40,55,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(40,55,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+}
+.do_img:hover::before{
+    opacity: .5;
+    height: 100% ;
+}
+.do_img img{
+    width: 100%;
+}
+.do_title{
+    position: absolute;
+    bottom: 40%;
+    left: 35%;
+    transform: translate(-41%,-40%);
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.do_img:hover .do_title{
+    left: 41%; 
+    opacity: 1;
+    font-size: 28px;
+    text-align: center;
+}
+.do_title h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    }
+.do_icon{
+    color: #fff;
+    position: absolute;
+    bottom: 18%;
+    left: 36%;
+    font-size: 32px;
+    transform: translate(41%, 18%);
+    transition: .4s all ease-in-out;
+    opacity: 0;
+}
+.do_img:hover .do_icon{
+    left: 41%;
+    opacity: 1;
+}
+.do_icon i{
+    
+}
+.attorneys_title{
+
+}
+
+.attorneys_title h1{
+    color: #fff;
+}
+
+.attorneys_title:hover .span_title span:before{
+    width: 100%;
+}
+
+.attorneys_title p{
+
+font-size: 15px;
+
+font-weight: 600;
+
+color: #999999;
+
+margin-bottom: 30px;
+
+margin-top: 25px;
+
+font-family: 'Montserrat', sans-serif;
+}
+.attorneys_title a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f47537 !important;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+    user-select: none;
+    padding: 5px 5px;
+    z-index: 0;
+    
+}
+/* From Left */
+.attorneys_title a:hover{
+    color: #fff !important;
+}
+
+.attorneys_title a::after {
+    content: '';
+    top: 0;
+    left: 0px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: transparent;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transition: all .4s ease-in-out;
+}
+.attorneys_title a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right: 0px;
+    background: #f47537;
+    /* opacity: .5; */
+    transition: all .4s ease-in-out;
+    z-index: -1;
+}
+
+
+
+.attorneys_title a:hover:before,.attorneys_title a:hover::after{
+color: #1f4f87 !important;
+width: 100%;
+height: 100%;
+}
+
+.attorneys{
+    background: #28377e;
+    padding: 28px;
+}
+.item_img{
+    position: relative;
+}
+.item_img::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,28377e+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #28377e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#28377e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#28377e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#28377e',GradientType=0 ); /* IE6-9 */
+
+    opacity: .5;
+}
+.item_img img{
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+}
+.attorneys_img_title{
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.attorneys_img_title h1{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+.attorneys_img_title h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+}
+.item_img:hover .attorneys_img_title{  
+    left: 10%;
+    opacity: 1;
+}
+.the_language{
+    
+}
+.the_language:hover .span_title span::before{
+    width: 100%;
+}
+.language{
+
+padding-top: 40px;
+}
+.language h1{
+
+font-family: 'Open Sans', sans-serif;
+
+font-size: 35px;
+
+text-transform: uppercase;
+
+color: #28377e;
+
+font-weight: 700;
+}
+.language p{
+
+font-family: 'Open Sans', sans-serif;
+
+color: #999999;
+
+font-size: 16px;
+
+font-weight: 500;
+
+margin: 0px;
+
+margin: 30px 0px;
+}
+.language a{
+    color: #f26b30;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .4s all ;
+    position: relative;
+    padding: 5px 5px;
+}
+.language a:hover{
+    color: #fff !important;
+}
+
+.language a::after {
+    content: '';
+    top: 0;
+    left: 0px;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: transparent;
+    border-top: 1px solid #1f4f87;
+    border-bottom: 1px solid #1f4f87;
+    transition: all .4s ease-in-out;
+}
+.language a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right: 0px;
+    background: #f47537;
+    /* opacity: .5; */
+    transition: all .4s ease-in-out;
+    z-index: -1;
+}
+.language a:hover:before,.language a:hover::after{
+    color: #1f4f87 !important;
+    width: 100%;
+    height: 100%;
+    }
+
+/* -----------contact part ------------ */
+.contact{
+
+background: #1f4f87;
+}
+.contact:hover .span_title span::before{
+    width: 100%;
+}
+.contact_title{
+
+}
+
+.contact_form{
+
+}
+.contact_form input{
+    background: transparent;
+    background: transparent;
+    color: #fff !important;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #4759a7;
+}
+.contact_form input::placeholder{
+    background: transparent;
+    color: #fff !important;
+}
+.contact_form input:focus{
+    background: transparent;
+    color: #fff !important;
+    border:none;
+    border-bottom: 2px solid #4759a7;
+    outline: 0px;
+    box-shadow: none;
+}
+.contact_form a{
+    color: #fff !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    /* border: 1px solid #f26b30; */
+    border-radius: 0px;
+    padding: 10px 20px;
+    background: #f26b30;
+    text-align: center;
+    width: 30%;
+    position: relative;
+    transition: .4s all ease-in-out;
+    
+}
+.contact_form a:hover{
+    background: transparent;
+}
+.contact_form a::before{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    bottom: 0px;
+    right: 0px;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.contact_form a::after{
+    content: '';
+    position: absolute;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    top: 0px;
+    left: 0px;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.contact_form a:hover:after,.contact_form a:hover:before{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+footer{
+
+background: #0c1234;
+}
+.copyright{
+
+display: flex;
+
+justify-content: left;
+
+align-items: center;
+}
+.copyright h2{
+
+color: #616ca8;
+
+font-size: 20px;
+
+font-family: 'Open Sans', sans-serif;
+
+font-weight: 500;
+}
+.social{
+}
+.social ul{
+
+list-style: none;
+
+display: flex;
+
+align-items: center;
+
+justify-content: end;
+
+height: 100px;
+}
+.social ul li{
+}
+.social ul li a{
+
+}
+.social ul li a i{
+
+height: 16px;
+
+width: 16px;
+
+text-align: center;
+
+margin-left: 15px;
+
+color: #b1b7dd;
+
+transition: .4s all ease-in-out;
+}
+.social ul li a i:hover{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.navbar .container-fluid{
+    padding-left: 0px;
+}

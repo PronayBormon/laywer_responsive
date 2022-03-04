@@ -1,0 +1,40 @@
+
+.background{
+    height: 200px;
+    width: 100%;
+    background: rgb(185, 80, 80);
+}
+.backgroundone{
+    height: 200px;
+    width: 100%;
+    background: #111;
+}
+.backgroundtwo{
+    height: 200px;
+    width: 100%;
+    background: #f39c12;
+}
+.backgroundthree{
+    height: 200px;
+    width: 100%;
+    background: #f96969;
+}
+.backtop{
+    position: fixed;
+    right: 70px;
+    bottom: 70px;
+    cursor: pointer;
+    color: #85ff00 !important;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    background: #111;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 12px;
+    z-index: 99;
+}
+.backtop i{
+    font-size: 40px;
+    color: #fff;
+}
