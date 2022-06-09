@@ -21,8 +21,8 @@
 }
 .backtop{
     position: fixed;
-    right: 70px;
-    bottom: 70px;
+    right: 25px;
+    bottom: 20px;
     cursor: pointer;
     color: #85ff00 !important;
     height: 60px;
